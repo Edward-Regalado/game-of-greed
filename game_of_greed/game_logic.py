@@ -1,16 +1,14 @@
-import random 
+import random
+from collections import Counter
 
 class GameLogic:
 
     def __init__(self, dice_left):
         self.dice_left = 6
 
-    @staticmethod
-    def calculate_score():
-        pass
 
-    # @staticmethod
-    def roll_dice(self, dice_left):
+    @staticmethod
+    def roll_dice(dice_left):
         if dice_left == None:
             dice_left = self.dice_left
         if dice_left == 0:
@@ -20,5 +18,4 @@ class GameLogic:
 
         return roll
 
-    roll_dice(5, 6)
-
+    #roll_dice(6)
