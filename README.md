@@ -27,7 +27,11 @@ Working on scoring
 https://github.com/Edward-Regalado/game-of-greed/pull/6
 all tests passing
 
+https://github.com/Edward-Regalado/game-of-greed/pull/7
+lab 7 tests passing. need refactors
 
+https://github.com/Edward-Regalado/game-of-greed/pull/8
+touched up for turn in
 
 https://github.com/Edward-Regalado/game-of-greed 
 Full Repo
