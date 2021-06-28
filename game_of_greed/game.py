@@ -103,16 +103,18 @@ class Game:
           print(f"Thanks for playing. You earned {self.balance} points")
           quit()
 
-      self.fake_dice_roll_2()   
-    
-    #print(f"Thanks for playing. You earned {self.balance} points")
+      self.fake_dice_roll_2()
+      print("Enter dice to keep, or (q)uit:")
+      dice_kept = input("> ")
+      print(f"Thanks for playing. You earned {self.balance} points")
 
 
-  def fake_dice_roll_2(self, dice=6):
-    
+  def fake_dice_roll_2(self, dice=6,):
+    roller = GameLogic.roll_dice
     self.round_counter +=1
     self.dice_left = 6
-    roll = GameLogic.roll_dice(self.dice_left)
+    roll = "665421"#this is fake for the test. use the one below this
+    ##roll = roller(self.dice_left)
     self.dice = dice
     print(f"Starting round {self.round_counter}")
     print(f"Rolling {self.dice_left} dice...")
@@ -166,6 +168,7 @@ class Game:
       else:
         #self.ask_to_play_again()
         self.repetitive_gameplay(quit_or_play_again)
+  
     else:
       print("Enter dice to keep, or (q)uit:")
       #quit_or_play_again = input("> ")
