@@ -19,8 +19,10 @@ class Banker:
         """
         takes value of shelved variable and adds to balance variable, then resets shelved variable
         """
+        amount_deposited = self.shelved
         self.balance = self.balance + self.shelved
         self.shelved = 0
+        return amount_deposited
 
     def clear_shelf(self):
         """
